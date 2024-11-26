@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Pong",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o",
+                "pong.exe",
+                "pong.c",
+                "-I",
+                "C:/Users/lfmr/Downloads/freeglut-3.6.0.tar.gz/include",
+                "-L",
+                "C:/Users/lfmr/Downloads/freeglut-3.6.0.tar.gz/lib",
+                "-lglut",
+                "-lGL",
+                "-lGLU"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila e vincula o FreeGLUT"
+        }
+    ]
+}
+
